@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeoGaming | Presupuesto</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+</head>
+<body class="layout">
+  <header>
+    <div class="logo">NeoGaming</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="productos.html">Galería</a></li>
+        <li><a class="activo" href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h1>Solicita tu presupuesto</h1>
+      <form>
+        <label>Nombre:
+          <input type="text" name="nombre" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,50}$" title="Introduce un nombre válido (solo letras, mínimo 2 caracteres)." />
+        </label>
+
+        <label>Email:
+          <input type="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$" title="Introduce un email válido." />
+        </label>
+
+        <label>Teléfono:
+          <input type="tel" name="telefono" required pattern="^[0-9]{9}$" title="Introduce un teléfono de 9 dígitos." />
+        </label>
+
+        <label>Solicita más información:
+          <textarea name="info" rows="5" required></textarea>
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" required /> Acepto la política de privacidad
+        </label>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 NeoGaming</p>
+      <div class="redes">
+        <a href="https://facebook.com" target="_blank">
+          <img src="../img/facebook.png" alt="Facebook" width="50" height="50" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="../img/twitter.png" alt="Twitter" width="50" height="50" />
+        </a>
+        <a href="https://youtube.com" target="_blank">
+          <img src="../img/youtube.png" alt="YouTube" width="50" height="50" />
+        </a>
+      </div>
+      <p>Av. Gamer 404, Mundo Virtual | <a href="#">Aviso Legal</a></p>
+    </div>
+  </footer>
+</body>
+</html>
